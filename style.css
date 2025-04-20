@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #ffe0b2;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-logo img {
+    max-width: 150px;
+}
+
+.menu-toggle {
+    position: absolute;
+    right: 20px; /* Moves it to the right side */
+    top: 25px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+#hamburger {
+    display: inline;
+}
+
+#close {
+    display: none;
+}
+
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #fff3e0;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav-menu a {
+    padding: 10px;
+    text-decoration: none;
+    color: #d84315;
+    font-weight: bold;
+    border-bottom: 1px solid #ffd180;
+}
+
+.nav-menu a:last-child {
+    border-bottom: none;
+}
+
+
+.slideshow {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slideshow .slide {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.events, .about, .media-gallery {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff8e1;
+}
+
+.events h2, .about h2, .media-gallery h2 {
+    margin-bottom: 15px;
+    color: #d84315;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #ffe0b2;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-logo img,
+.footer-about img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-about {
+    max-width: 300px;
+}
+
+.footer-bottom a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #bf360c;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-about {
+        text-align: center;
+    }
+}
