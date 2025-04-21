@@ -58,17 +58,32 @@ header {
 }
 
 
-.slideshow {
+.slideshow-container {
     position: relative;
     max-width: 100%;
+    margin: auto;
     overflow: hidden;
-}
-
-.slideshow .slide {
+  }
+  
+  .slide {
     display: none;
     width: 100%;
+  }
+  
+  .slide img {
+    width: 100%;
     height: auto;
-}
+  }
+  
+  .fade {
+    animation: fadeEffect 1s ease-in-out;
+  }
+  
+  @keyframes fadeEffect {
+    from {opacity: 0.4}
+    to {opacity: 1}
+  }
+  
 
 .events, .about, .media-gallery {
     padding: 40px 20px;
