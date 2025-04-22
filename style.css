@@ -177,14 +177,14 @@ footer {
   }
   
   .info-box h3 {
-    color: #28b485;
+    color: #ff7300;
     margin-bottom: 10px;
   }
   
   .info-box hr {
     width: 50px;
     height: 2px;
-    background-color: #28b485;
+    background-color: #ff7300;
     border: none;
     margin: 10px auto;
   }
@@ -197,7 +197,7 @@ footer {
   }
   
   .info-box button {
-    background-color: #28b485;
+    background-color: #ff7300;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -207,7 +207,7 @@ footer {
   }
   
   .info-box button:hover {
-    background-color: #1e9d6f;
+    background-color: #1e0063;
   }
   
   @media (max-width: 768px) {
@@ -376,7 +376,7 @@ body {
 /* Responsive */
 @media screen and (max-width: 1024px) {
   .hero-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: auto;
   }
 
