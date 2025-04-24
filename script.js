@@ -30,34 +30,3 @@ window.toggleMenu = function () {
         closeIcon.style.display = 'inline';
     }
 };
-
-document.addEventListener("DOMContentLoaded", () => {
-  let currentIndex = 0;
-  const slider = document.getElementById("slider");
-  const slides = slider.querySelectorAll("img");
-
-  function updateSlider() {
-    slides.forEach((img, index) => {
-      const offset = (index - currentIndex) * 320;
-      img.classList.remove("active");
-      img.style.transform = `translateX(${offset}px) scale(${index === currentIndex ? 1 : 0.9})`;
-      img.style.opacity = index === currentIndex ? "1" : "0.5";
-    });
-
-    if (slides[currentIndex]) {
-      slides[currentIndex].classList.add("active");
-    }
-  }
-
-  window.moveSlide = function (step) {
-    currentIndex += step;
-    if (currentIndex < 0) {
-      currentIndex = slides.length - 1;
-    } else if (currentIndex >= slides.length) {
-      currentIndex = 0;
-    }
-    updateSlider();
-  };
-
-  updateSlider();
-});
